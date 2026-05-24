@@ -119,7 +119,8 @@ ai-agent/
 
 **Tool declarations separate from the dispatcher** — `call_function.py` maps model-requested function names to actual Python callables. This separation makes it easy to add new tools without touching the agent loop.
 
-**Working directory is hardcoded** — intentionally scoped to the `calculator/` folder while the project is in early development. Giving an AI agent unrestricted file system access without proper sandboxing is a real security concern.
+**Working directory is hardcoded** — intentionally scoped to the `calculator/` folder while the project is in early development. Giving an AI agent unrestricted file system access without proper sandboxing is a real security concern, so the scope is kept narrow until a safe directory input mechanism is built.
+
 ---
 
 ## Built By
